@@ -1,2 +1,2 @@
-var chalk = require('chalk');
-console.log('Listening on dev mode');
+import chalk from 'chalk';
+console.log(chalk.green('Listening on dev mode'));

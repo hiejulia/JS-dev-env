@@ -1,6 +1,7 @@
 # JS-dev-env
 ## How to install 
-
++ Download/ Clone this repo
++ File includes: babel, editorconfig, eslint, travisCI, webpack config, NodeJS server, EJS, testing with chai
 # Linting
 + Options to choose: JSLint, JSHint, ESLint
 + ESLint

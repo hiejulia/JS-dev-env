@@ -10,6 +10,13 @@
 
 # Testing
 + Mocha, Jasmine, Tape, QUnit, AVA
++ JSDOM, PhanTomJS, Karma, Testem, Cheerio
++ Browser: Karma, Testem
++ Headless browser: PhantomJS
++ DOM: JsDOM
++ Naming convention : .spec, .test
+
+
 
 
 

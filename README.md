@@ -33,3 +33,25 @@
 # Production Build
 + Minification
 + Sourcemaps
++ Minified HTML and scripts tags
++ Cache busting
++ Bundle splitting
++ Error logging
++ Dynamic HTML via EmbeddedJS
+# Production deploy notes
++ UI seperate API
++ Cloud hosting
++
+
+# More resources for boilerplate
++ Development env
++ Boilerplate
++ Starter-kit
++ Starter project
++ Seed
+
+# Others to start project
++ Yeoman
++ Github
++ npm
+

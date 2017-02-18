@@ -1,8 +1,5 @@
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import WebpackMd5Hash from 'webpack-md5-hash';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
-
 
 export default {
 
@@ -15,11 +12,10 @@ export default {
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
-    filename: '[name].[chunkhash].js'
+    filename: '[name].js'
   },
   plugins: [
-    //generate external css file with a hash in the file name
-    new ExtractTextPlugin('[name].[contenthash].css'),
+
     //create html file the includes ref to bundle js
     new HtmlWebpackPlugin({
       template:'src/index.html',
@@ -39,7 +35,7 @@ export default {
       inject: true,
       //properties you define here are available in index.html
       //using htmlwebpackplugin.options.varname
-      trackJSToken:'43ad216f57d94259968435894490a5c7'
+      trackJSToken:'f7c774d732b1425bbc17a352d43cb9d7'
     }),
     // Eliminate duplicate packages when generating bundle
     new webpack.optimize.DedupePlugin(),

@@ -3,32 +3,31 @@ import getBaseUrl from './baseUrl';
 
 const baseUrl = getBaseUrl();
 
-//export
-export function getUsers(){
+export function getUsers() {
   return get('users');
-
 }
 
-//function get
-function get(url){
-  return fetch(baseUrl+ url).then(onSuccess,onError);
-}
-
-
-
-
-export function deleteUser(id){
+export function deleteUser(id) {
   return del(`users/${id}`);
 }
 
-//success
-function onSuccess(res){
-  return res.json();
-
+function get(url) {
+  return fetch(baseUrl + url).then(onSuccess, onError);
 }
 
+// Can't call func delete since reserved word.
+function del(url) {
+  const request = new Request(baseUrl + url, {
+    method: 'DELETE'
+  });
 
-//error
-function onError(err){
-  console.error(err); //eslint-disable-line no-console
+  return fetch(request).then(onSuccess, onError);
+}
+
+function onSuccess(response) {
+  return response.json();
+}
+
+function onError(error) {
+  console.log(error); // eslint-disable-line no-console
 }

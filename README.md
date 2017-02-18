@@ -22,9 +22,6 @@
 + fetch
 
 
-
-
-
 # Project/app structure
 + Put js in a .js file
 + Organise code in feature rather than mvc modules
@@ -41,7 +38,7 @@
 # Production deploy notes
 + UI seperate API
 + Cloud hosting
-+
++ UI static hosting (Surge)
 
 # More resources for boilerplate
 + Development env

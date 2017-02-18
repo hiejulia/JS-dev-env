@@ -4,7 +4,7 @@ import fs from 'fs';
 
 //write test here
 describe('First test',() => {
-  it('passed' () => {
+  it('passed', () => {
     expect(true).to.equal(true);
   });
 });
@@ -15,7 +15,7 @@ describe('Test index.html',() => {
     const index = fs.readFileSync('./src/index.html',"utf-8");
     jsdom.env(index,function(err,window){
       const h1 = window.document.getElementsByTagName('h1')[0].innerHTML;
-      expect(h1).to.equal("Users");
+      expect(h1).to.equal("Hello World");
       done();
       window.close();
     });

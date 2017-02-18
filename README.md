@@ -1,5 +1,6 @@
 # JS-dev-env
-#
+## How to install 
+
 # Linting
 + Options to choose: JSLint, JSHint, ESLint
 + ESLint

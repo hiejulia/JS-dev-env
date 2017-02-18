@@ -17,6 +17,9 @@
 + Naming convention : .spec, .test
 
 
+# HTTP calls
++ axios
++ fetch
 
 
 

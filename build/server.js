@@ -24,6 +24,19 @@ app.use(require('webpack-dev-middleware')(compiler,{
 app.get('/',function(req,res){
   res.sendFile(path.join(__dirname,'../src/index.html'));
 });
+
+//users
+app.get('/users',function(req,res){
+  //hard-coded
+  res.json([
+    {"id": 1,"firstName":"A","lastName":"B","email":"a@gmail.com"},
+    {"id": 2,"firstName":"C","lastName":"D","email":"c@gmail.com"},
+    {"id": 3,"firstName":"E","lastName":"F","email":"e@gmail.com"}
+  ]);
+});
+
+
+
 //listen
 app.listen(port,function(err){
   if(err){

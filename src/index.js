@@ -1,6 +1,22 @@
 import './index.css';
+//import api
+import {getUsers} from './api/usersApi';
+//get the table from api
+getUsers().then(res => {
+  let usersOutput = '';
+  res.forEach(user => {
+    usersOutput+= `<tr>
+      <td><a href="#" data-id="${user.id}" class="deleteUser">Delete</a></td>
+      <td>${user.id}</td>
+      <td>${user.firstName}</td>
+      <td>${user.lastName}</td>
+      <td>${user.email}</td>
+      </tr>`
+  });
 
-import numeral from 'numeral';
+  window.document.getElementById("usersOutput").innerHTML = usersOutput;
 
-const courseValue = numeral(1000).format('$0,0.00');
-console.log(`I would pay ${courseValue} for this awesome course`);
+
+
+
+});

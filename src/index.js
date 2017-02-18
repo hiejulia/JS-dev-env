@@ -1,6 +1,6 @@
 import './index.css';
 //import api
-import {getUsers} from './api/usersApi';
+import {getUsers, deleteUser} from './api/usersApi';
 //get the table from api
 getUsers().then(res => {
   let usersOutput = '';

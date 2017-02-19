@@ -2,6 +2,7 @@
 # What it does?
 + Boilerplate for Javascript projects
 + Can work fine with Angular, React or just vanilla Javascript.
+
 # How to install 
 + Download/ Clone this repo
 + File includes: babel, editorconfig, eslint, travisCI, webpack config, NodeJS server, EJS, testing with chai

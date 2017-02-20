@@ -59,3 +59,6 @@
 + Github
 + npm
 
+# Developer
+Hien Nguyen hienminhnguyen711@gmail.com
+

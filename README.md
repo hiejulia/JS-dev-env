@@ -2,6 +2,7 @@
 # What it does?
 + Boilerplate for Javascript projects
 + Can work fine with Angular, React or just vanilla Javascript.
++ I create this repo for a starting point for any Javascript projects. This is more like than the front-end boilerplate.
 
 # How to install 
 + Download/ Clone this repo

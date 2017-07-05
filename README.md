@@ -6,7 +6,7 @@
 
 # How to install 
 + Download/ Clone this repo
-+ File includes: babel, editorconfig, eslint, travisCI, webpack config, NodeJS server, EJS, testing with chai
++ File includes: babel, editorconfig, eslint, travisCI, webpack config, NodeJS server, EJS, testing with chai and mocha, circleCI, docker, AWS, CI and CD
 
 # Linting
 + Options to choose: JSLint, JSHint, ESLint
@@ -60,6 +60,4 @@
 + Github
 + npm
 
-# Developer
-Hien Nguyen hienminhnguyen711@gmail.com
 
